@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <!-- <meta http-equiv="refresh" content="2">  ❗❗❗ нужно удалить ❗❗❗ -->
         <link rel="stylesheet" href="css/style.css">
         <title>HTML Academy: Девайс</title>
     </head>
@@ -15,8 +14,11 @@
                 <!-- юзерские штучки -->
                 <section class="header-line-one">
                     <!-- форма поиска -->
-                    <form name="header-search" method="GET">
-                        <input type="search" name="search" id="search">
+                    <form name="header-search" method="GET" action="https://echo.htmlacademy.ru">
+                        <label for="search-query" class="visually-hidden">Поиска по сайту</label>
+                        <input id="search-query" type="search" name="search-query" placeholder="Поиск по сайту">
+                        <!-- кнопка поиска появляется в активном состоянии -->
+                        <button type="submit" name="button-search">Найти</button>
                     </form>
 
                     <!-- пользовательская навигация  -->
@@ -137,7 +139,11 @@
                 </ol>
 
                 <!-- кружочки слайдера -->
-                <span>...</span>
+                <ul>
+                    <li><a class="promo-slider-button" href="#"></a></li>
+                    <li><a class="promo-slider-button" href="#"></a></li>
+                    <li><a class="promo-slider-button" href="#"></a></li>
+                </ul>
             </section>
 
             <!-- раздел с перечнем групп товаров -->
@@ -237,7 +243,8 @@
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
                     <!-- карта -->
-                    <a href="#"><img src="img/map.jpg" width="560" height="222" alt="карта"></a>
+                    <a href="#"><img src="img/map.jpg" width="560" height="222" alt="улица Строителей, 15
+                        Москва, Россия, 119311"></a>
 
                     <a class="button" href="#">напишите нам</a>
                 </section>
@@ -287,20 +294,38 @@
 
         <!-- всплывающее окно обратной связи -->
         <section class="modal modal-feedback">
-            
+            <!-- скрытый загаловок -->
+            <h1 class="visually-hidden">Форма обратной связи</h1>
+
             <!-- форма скоро будет-->
+            <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+                <label>
+                    Ваше имя:
+                    <input type="text" name="feedback-form-name" placeholder="Имя Фамилия" required>
+                </label>
+                <label>
+                    Ваш e-mail:
+                    <input type="email" name="feedback-form-email" placeholder="email@example.com" required>
+                </label>
+                <label>
+                    Текст письма:
+                    <textarea type="text" name="feedback-form-letter" rows="5" placeholder="В свободной форме" required></textarea>
+                </label>
+                <button type="submit" class="button" name="feedback-button">отправить</button>
+            </form>
 
             <!-- крести для закрытия -->
-            <span class="modal-close">x</span>
+            <button class="modal-close" type="button">x</button>
         </section>
 
         <!-- всплывающее окно карты -->
         <section class="modal modal-map">
             
             <!-- карта сокровищ  -->
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A51b56f266ccd8ba011a74e9784088fccb69183ffd4b29c4d1c7bec9e78c52bb2&amp;source=constructor" width="960" height="560" frameborder="0"></iframe>
 
             <!-- крести для закрытия -->
-            <span class="modal-close">x</span>
+            <button class="modal-close" type="button">x</button>
         </section>
     </body>
 </html>
