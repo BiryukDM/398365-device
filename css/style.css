@@ -1,10 +1,52 @@
-/* .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
+@font-face {
+  font-family: 'gilroyextrabold';
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroylight';
+  src: url('../fonts/gilroylight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('../fonts/opensanslight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+- Позиционирование
+- Блочная модель (размеры и отступы) и поток
+- Оформление текста
+- Декоративные эффекты (фоны, тени и так далее)
+- Анимация и динамические эффекты
+- Разное
+*/
+
+body {
+    margin: 0;
     padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-} */
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #464646;
+
+    background-color: #ffffff;
+}
+
+a {
+        
+}
